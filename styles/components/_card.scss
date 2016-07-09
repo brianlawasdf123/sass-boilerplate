@@ -1,3 +1,25 @@
 .card {
     background-color: #fff;
 }
+
+.card--horizontal {
+    font-size: 0.8rem;
+
+    @include clearfix;
+
+    .card__image-container {
+        width: 5rem;
+        height: 5rem;
+        overflow: hidden;
+        float: left;
+    }
+
+    .card__image {
+        width: 100%;
+    }
+
+    .card__meta {
+        padding: 0.5rem 0 0.5rem 5.2rem;
+        width: 100%;
+    }
+}

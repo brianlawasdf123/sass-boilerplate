@@ -1,1 +1,9 @@
-@import 'components/card';
+@import 'scripts/reset';
+@import 'variables/index';
+@import 'mixins/index';
+@import 'components/index';
+@import 'layouts/index';
+
+.most-popular {
+    color: $darkPrimary;
+}

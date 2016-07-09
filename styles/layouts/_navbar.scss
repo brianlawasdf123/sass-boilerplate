@@ -1,0 +1,25 @@
+.navbar {
+    height: 100%;
+}
+
+.navbar__logo {
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.navbar__menu-toggle {
+    display: inline-block;
+}
+
+.navbar__left {
+    padding: 1rem 0 0 1rem;
+    display: inline-block;
+    width: $sidebarPrimaryWidth;
+    height: 100%;
+}
+
+.navbar__search {
+    padding-top: 1rem;
+    display: inline-block;
+    height: 100%;
+}

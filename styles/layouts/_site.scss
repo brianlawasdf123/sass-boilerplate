@@ -1,0 +1,44 @@
+$sidebarPrimaryWidth: 10rem;
+$sidebarSecondaryWidth: 20rem;
+$navbarHeight: 5rem;
+
+.site {}
+.site__navbar {
+    color: $iconText;
+    background-color: $darkPrimary;
+    height: $navbarHeight;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.site__sidebar-primary {
+    color: $iconText;
+    width: $sidebarPrimaryWidth;
+    background-color: $primary;
+    height: 100%;
+    position: fixed;
+    padding-top: $navbarHeight;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;
+    padding: ($navbarHeight + 1) 0 0 1rem;
+}
+.site__sidebar-secondary {
+    width: $sidebarSecondaryWidth;
+    background-color: #fff;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    padding: ($navbarHeight + 1) 1rem 1rem 1rem;
+    left: $sidebarPrimaryWidth;
+    overflow-y: auto;
+    border-right: 1px dotted $lightPrimary;
+}
+.site__main {
+    width: 100%;
+    background-color: #fff;
+    height: 2000px;
+    padding-left: $sidebarPrimaryWidth + $sidebarSecondaryWidth;
+    padding-top: $navbarHeight;
+}
