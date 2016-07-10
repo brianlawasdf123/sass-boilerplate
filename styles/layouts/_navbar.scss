@@ -2,24 +2,25 @@
     height: 100%;
 }
 
-.navbar__logo {
-    font-size: 1.5rem;
-    display: inline-block;
-}
-
-.navbar__menu-toggle {
-    display: inline-block;
-}
-
 .navbar__left {
     padding: 1rem 0 0 1rem;
-    display: inline-block;
+    float: left;
     width: $sidebarPrimaryWidth;
     height: 100%;
 }
 
+.navbar__logo {
+    font-size: 1.5rem;
+    float: left;
+}
+
+.navbar__menu-toggle {
+    float: left;
+    margin: 0.3rem 0 0 0.5rem;
+}
+
 .navbar__search {
     padding-top: 1rem;
-    display: inline-block;
+    float: left;
     height: 100%;
 }

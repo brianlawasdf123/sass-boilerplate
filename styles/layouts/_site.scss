@@ -1,5 +1,5 @@
 $sidebarPrimaryWidth: 10rem;
-$sidebarSecondaryWidth: 20rem;
+$sidebarSecondaryWidth: 18rem;
 $navbarHeight: 5rem;
 
 .site {}
@@ -12,6 +12,21 @@ $navbarHeight: 5rem;
     top: 0;
     z-index: 1;
 }
+
+.site__navbar {
+    .input-icon__icon {
+        border: 1px solid $darkPrimary;
+        background-color: $lightPrimary;
+        color: $darkPrimary;
+    }
+
+    .input-icon__input {
+        color: $darkPrimary;
+        border: 1px solid $darkPrimary;
+        background-color: $lightPrimary;
+    }
+}
+
 .site__sidebar-primary {
     color: $iconText;
     width: $sidebarPrimaryWidth;
@@ -32,13 +47,21 @@ $navbarHeight: 5rem;
     top: 0;
     padding: ($navbarHeight + 1) 1rem 1rem 1rem;
     left: $sidebarPrimaryWidth;
-    overflow-y: auto;
     border-right: 1px dotted $lightPrimary;
 }
+
+
+.site__sidebar-primary + .site__main {
+    padding-left: $sidebarPrimaryWidth + 1rem;
+}
+
+.site__sidebar-secondary + .site__main {
+    padding-left: $sidebarPrimaryWidth + $sidebarSecondaryWidth + 1rem;
+}
+
 .site__main {
     width: 100%;
     background-color: #fff;
     height: 2000px;
-    padding-left: $sidebarPrimaryWidth + $sidebarSecondaryWidth;
-    padding-top: $navbarHeight;
+    padding-top: ($navbarHeight + 1rem);
 }

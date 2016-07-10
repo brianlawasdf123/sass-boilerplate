@@ -1,4 +1,23 @@
-.input-icon {}
-.input-icon__input {
-    background-color: $lightPrimary;
+
+.input-icon {
+    @include clearfix;
+    height: 3rem;
 }
+
+.input-icon__input {
+    float: left;
+    height: 100%;
+    font-size: 2rem;
+    outline: none;
+    border: 1px solid $divider;
+}
+
+.input-icon__icon {
+    cursor: pointer;
+    float: left;
+    font-size: 2rem;
+    height: 100%;
+    outline: none;
+    border: 1px solid $divider;
+}
+

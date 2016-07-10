@@ -1,0 +1,33 @@
+.masthead {}
+
+.masthead__primary {
+    height: 30rem;
+    margin-bottom: 0.5rem;
+}
+.masthead__secondary-container {
+    @include clearfix;
+}
+.masthead__secondary {
+    width: 25%;
+    float: left;
+    padding: 0 0.2rem;
+}
+
+.masthead__secondary:first-child {
+    padding: 0 0.2rem 0 0;
+}
+.masthead__secondary:last-child {
+    padding: 0 0 0 0.2rem;
+}
+
+
+.masthead__primary {
+    .card__title {
+        font-size: 2rem;
+    }
+}
+.masthead__secondary {
+    .card__title {
+        font-size: 1.2rem;
+    }
+}

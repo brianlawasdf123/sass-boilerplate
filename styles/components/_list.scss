@@ -2,4 +2,20 @@
 .list {}
 .list__item {
     margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $divider;
+}
+
+
+.list--scrollable {
+    overflow-y: auto;
+    height: 100%;
+}
+
+.list--horizontal {
+    .list__item {
+        float: left;
+        width: 12rem;
+        padding-right: 0.2rem;
+    }
 }
